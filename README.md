@@ -10,6 +10,25 @@ The project follows the **Classification of Cloud Coverage** option from the GEO
 
 ---
 
+
+## Video explanation
+
+The accompanying video explains:
+
+1. The cloud coverage classification problem.
+2. The Sentinel-3 OLCI data source.
+3. How the 21 radiance bands were converted and split into chunks.
+4. How the automatic threshold mask was generated.
+5. How the CNN and Random Forest models were trained and applied.
+6. How the supervised and unsupervised model results compare.
+7. The environmental cost of running the project.
+
+Video link:
+
+```text
+Add video link here
+```
+
 ## Data source
 
 The data used in this project is a Sentinel-3B OLCI Level-1 EFR product downloaded from the [Copernicus Data Space Ecosystem](https://dataspace.copernicus.eu/) using the [Copernicus Browser](https://browser.dataspace.copernicus.eu/).
@@ -291,26 +310,6 @@ kmeans_confusion_matrix.png
 ```
 
 These are included in the `figures/` folder.
-
----
-
-## Video explanation
-
-The accompanying video explains:
-
-1. The cloud coverage classification problem.
-2. The Sentinel-3 OLCI data source.
-3. How the 21 radiance bands were converted and split into chunks.
-4. How the automatic threshold mask was generated.
-5. How the CNN and Random Forest models were trained and applied.
-6. How the supervised and unsupervised model results compare.
-7. The environmental cost of running the project.
-
-Video link:
-
-```text
-Add video link here
-```
 
 ---
 
