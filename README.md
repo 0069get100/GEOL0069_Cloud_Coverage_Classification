@@ -12,7 +12,30 @@ The project follows the **Classification of Cloud Coverage** option from the GEO
 
 ## Data source
 
-The data used in this project is a Sentinel-3 OLCI Level-1 EFR product downloaded from the Copernicus Data Space Ecosystem.
+The data used in this project is a Sentinel-3B OLCI Level-1 EFR product downloaded from the [Copernicus Data Space Ecosystem](https://dataspace.copernicus.eu/) using the [Copernicus Browser](https://browser.dataspace.copernicus.eu/).
+
+The Copernicus Data Space Ecosystem provides access to Sentinel satellite data, while the Copernicus Browser was used to search for and download the selected Sentinel-3 OLCI product.
+
+The selected product is:
+
+```text
+S3B_OL_1_EFR____20240707T101616_20240707T101916_20240921T173553_0179_095_065_1980_MAR_R_NT_004.SEN3
+```
+
+Product information:
+
+```text
+Mission: Sentinel-3B
+Instrument: OLCI
+Product type: Level-1 EFR
+Sensing time: 2024-07-07T10:16:16
+```
+
+The screenshot below shows the selected Sentinel-3B OLCI product in Copernicus Browser, including its spatial footprint around the United Kingdom and nearby ocean surfaces.
+
+![Selected Sentinel-3B OLCI product in Copernicus Browser](figures/copernicus_product_location.png)
+
+This scene was selected because it contains both clear sea-surface pixels and cloud-covered areas, making it suitable for a binary cloud and sea classification task.
 
 The notebook uses the 21 OLCI radiance files:
 
@@ -29,9 +52,9 @@ These 21 NetCDF radiance bands are converted into a single NumPy array:
 radiance.npy
 ```
 
-The full image is then split into five smaller chunks to reduce memory use. Chunk 4 was selected for classification because it contains both clear sea-surface pixels and cloud-covered pixels.
+The full image is then split into five smaller chunks to reduce memory use. Chunk 4 was selected for model training and prediction because it contains a useful mixture of clear sea-surface pixels and cloud-covered pixels.
 
-Large raw data files are not included in this GitHub repository because the Sentinel-3 product and generated NumPy arrays are too large. The notebook contains the full code used to convert the original NetCDF files into NumPy arrays.
+Large raw data files are not included in this GitHub repository because the Sentinel-3 product and the generated NumPy arrays are too large. The notebook contains the full code used to convert the original NetCDF radiance files into NumPy arrays and reproduce the processing workflow.
 
 ---
 
