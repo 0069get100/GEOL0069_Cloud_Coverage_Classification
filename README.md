@@ -9,8 +9,25 @@ Cloud detection is an important preprocessing step in Earth observation because 
 The project follows the **Classification of Cloud Coverage** option from the GEOL0069 AI for Earth Observation coding assignment.
 
 ---
+## Table of contents
 
+- [Project overview](#project-overview)
+- [Video explanation](#video-explanation)
+- [Data source](#data-source)
+- [Repository structure](#repository-structure)
+- [Methodology](#methodology)
+- [Remote sensing and classification workflow](#remote-sensing-and-classification-workflow)
+- [Input OLCI image](#input-olci-image)
+- [Automatic threshold mask](#automatic-threshold-mask)
+- [Classification results](#classification-results)
+- [Model comparison](#model-comparison)
+- [Confusion matrices](#confusion-matrices)
+- [Environmental cost assessment](#environmental-cost-assessment)
+- [How to run the notebook](#how-to-run-the-notebook)
+- [Main outputs](#main-outputs)
+- [Conclusion](#conclusion)
 
+---
 ## Video explanation
 
 The accompanying video explains:
