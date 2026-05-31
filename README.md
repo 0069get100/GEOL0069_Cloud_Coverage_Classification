@@ -25,8 +25,7 @@ The accompanying video explains:
 
 Video link:
 
-```text
-https://youtu.be/6hOZ-XowkH4
+[GEOL0069 Cloud Coverage Classification using Sentinel-3 OLCI](https://youtu.be/6hOZ-XowkH4)
 ```
 
 ## Data source
